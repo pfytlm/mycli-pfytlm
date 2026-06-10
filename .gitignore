@@ -17,6 +17,10 @@ dist/
 *.egg
 *.whl
 *.tar.gz
+uv.lock
+
+# Demo / scratch files
+simple_cli.py
 
 # IDE / editor
 .idea/
