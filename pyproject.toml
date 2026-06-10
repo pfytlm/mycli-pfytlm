@@ -1,0 +1,36 @@
+[project]
+name = "mycli-pfytlm"
+version = "0.1.0"
+description = "A personal habit / todo CLI demo"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "pfytlm", email = "pfytlm1988@hotmail.com" }]
+keywords = ["cli", "todo", "productivity"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/pfytlm/mycli-pfytlm"
+Repository = "https://github.com/pfytlm/mycli-pfytlm"
+"Bug Tracker" = "https://github.com/pfytlm/mycli-pfytlm/issues"
+
+[project.scripts]
+mycli = "mycli.cli:main"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["mycli*"]
